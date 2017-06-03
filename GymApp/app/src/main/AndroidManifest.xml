@@ -8,10 +8,29 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.SignInActivity"></activity>
-        <activity android:name=".activities.MainMenuActivity" />
-        <activity android:name=".activities.ExerciseMenuActivity" />
-        <activity android:name=".activities.ToolsMenuActivity" />
+        <activity android:name=".activities.SignInActivity"
+            android:label="SignIn"
+            ></activity>
+        <activity android:name=".activities.MainMenuActivity"
+            android:label="Main Menu"
+            />
+        <activity android:name=".activities.ExerciseMenuActivity"
+            android:label="Exersice Menu"
+            >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainMenuActivity" />
+
+        </activity>
+        <activity android:name=".activities.ToolsMenuActivity"
+            android:label="Tools Menu"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainMenuActivity" />
+
+        </activity>
         <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +38,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.LogoutActivity"></activity>
+        <activity android:name=".activities.LogoutActivity"
+            android:label="Logout"
+            ></activity>
     </application>
 
 </manifest>

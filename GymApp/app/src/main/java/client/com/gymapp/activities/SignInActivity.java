@@ -88,7 +88,7 @@ public class SignInActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(SignInActivity.this , MainMenuActivity.class);
                     intent.putExtra(Constants.USER_NAME_KEY, users.getName());
-                    Constants.TIME_IN = DateTimeUtils.getCurrentTime();
+                    Constants.TIME_IN = DateTimeUtils.getCurrentTimeInString();
                     Constants.TIME_IN_DATE = Calendar.getInstance().getTime();
                     startActivity(intent);
                 }
