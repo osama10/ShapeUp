@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shape Up</string>
+    <string name="logout">Logout</string>
+    <string-array name="type_of_exercise">
+        <item>Push Ups</item>
+        <item>Arm Lifting</item>
+        <item>Shoulder Lifting</item>
+    </string-array>
+
+    <string-array name="type_of_tools">
+        <item>Trade Mill</item>
+        <item>Butterfly</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tools_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="50dp"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="client.com.gymapp.activities.ToolsMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+        <TextView
+            android:layout_weight="0.75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Tools"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            />
+
+        <Spinner
+            android:layout_weight="2.25"
+            android:id="@+id/sp_typeOfTools"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+
+        >
+        <TextView
+            android:id="@+id/tv_first1"
+            android:layout_weight="0.5"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="Speed"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_speed"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/tv_first2"
+            android:layout_weight="0.5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Km/h"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+        <TextView
+            android:id="@+id/tv_second1"
+            android:layout_weight="0.5"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_time"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/tv_second2"
+            android:layout_weight="0.5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="minutes"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+        <TextView
+            android:id="@+id/tv_third1"
+            android:layout_weight="0.5"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="Km"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_km"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/tv_third2"
+            android:layout_weight="0.5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Km"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textColor="@color/btnColor"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btn_DoneToolMenu"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
